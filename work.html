@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css-work.css">
+	<script src="https://kit.fontawesome.com/4e4af12e52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="general">
+	<div id="header">
+		<div id="logo">
+			<img src="logo.png" alt="logo" class="logo invert" onclick= "openGoogleByMethod()" style="cursor: pointer;" />
+		</div>
+		<div id="homeButton">
+			<a href="index.html" target="_blank">
+				<i class="fa fa-home" aria-hidden="true"></i>
+			</a>
+		</div>
+		<div id="menuBar">
+					<div id="menuBarElements">
+							<a href="bio.html" class="enlace1" target="_blank">BIO</a>
+							<a href="#" class="enlace2">WORK</a>
+							<a href="contact.html" class="enlace3" target="_blank">CONTACT</a>
+							<!--<a href="#" class="enlace4">RRSS</a>-->
+						</div>
+			</div>
+	</div><!--Header-->
+			
+	</div><!--General-->
+			<div id="contenido">
+				<div class="container">
+		  <div class="mySlides">
+		    <div class="numbertext">1 / 6</div>
+		    <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">2 / 6</div>
+		    <img src="https://www.w3schools.com/howto/img_5terre_wide.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">3 / 6</div>
+		    <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+		  </div>
+		    
+		  <div class="mySlides">
+		    <div class="numbertext">4 / 6</div>
+		    <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">5 / 6</div>
+		    <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+		  </div>
+		    
+		  <div class="mySlides">
+		    <div class="numbertext">6 / 6</div>
+		    <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+		  </div>
+		    
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+
+		  <div class="caption-container">
+		    <p id="caption"></p>
+		  </div>
+
+		  <div class="row">
+		    <div class="column">
+		      <img class="demo cursor" src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="<strong>The Woods</strong><br/> Prueba">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="https://www.w3schools.com/howto/img_5terre_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="<strong>Cinque Terre</strong><br/> Prueba">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="<strong>Mountains and fjords</strong><br/> Prueba">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="<strong>Northern Lights</strong><br/> Prueba">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="<strong>Nature and sunrise</strong><br/> Prueba">
+		    </div>    
+		    <div class="column">
+		      <img class="demo cursor" src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="<strong>Snowy Mountains</strong><br/> Prueba">
+		    </div>
+		  </div>
+		</div>
+	</div><!--Contenido-->
+
+
+
+	<div id="footer">
+		<p>&copy;XI</p>		
+	</div>
+
+
+
+		
+
+
+
+
+</div><!---General--->
+<script src="script.js"></script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
