@@ -1449,6 +1449,25 @@ iframe{
 }
 
 
+@media only screen and (max-width: 380px){
+#home h1 {
+    font-family: 'Inter', sans-serif;
+    text-shadow: 2px 2px 4px rgb(9 30 18 / 94%);
+    color: #ffffff;
+    font-size: 62px;
+    display: block;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    position: inherit;
+    z-index: 200;
+}
+
+
+
+
+}
+
 
 
 
